@@ -22,5 +22,6 @@
   "devDependencies": {
     "@types/node": "^25.3.3"
   },
-  "repository": "github:0stv0/toolkit"
+  "repository": "github:0stv0/toolkit",
+  "homepage": "https://github.com/0stv0/toolkit#readme"
 }
