@@ -191,3 +191,23 @@ class MyStore extends SessionStore<MySession>
 };
 export { MyStore };
 ```
+
+### Creating session instance
+```ts
+import { MySession } from "./MySession.js";
+
+// New session
+let session: MySession = new MySession({
+    user: 'stevku',
+    isNew: true, // if true, then generates random sid
+    valid: true // if new, set to true
+}, 123);
+
+// Some old sessions loader
+let session2: MySession = new MySession({
+    user: 'userFromDb',
+    isNew: false,
+    valid: true,
+    sid: 'sidFromDb'
+}, 123);
+```
