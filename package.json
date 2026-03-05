@@ -1,0 +1,26 @@
+{
+  "name": "toolkit",
+  "version": "1.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "stevku",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@toon-format/toon": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3"
+  },
+  "repository": "github:0stv0/toolkit"
+}
