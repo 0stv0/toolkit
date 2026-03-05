@@ -1,6 +1,6 @@
 {
-  "name": "toolkit",
-  "version": "1.0",
+  "name": "@0stv0/toolkit",
+  "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
