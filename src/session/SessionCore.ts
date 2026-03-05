@@ -1,4 +1,4 @@
-interface Props
+interface SessionProps
 {
     sid?: string;
     user: string | number;
@@ -10,7 +10,7 @@ class SessionCore
     protected readonly sid: string;
     protected readonly user: string | number;
     protected valid: boolean;
-    constructor(props: Props)
+    constructor(props: SessionProps)
     {
         if (!props.isNew && !props.sid)
             throw new Error("No sid in old session");
@@ -24,4 +24,4 @@ class SessionCore
 
     public revoke = () => this.valid = false;
 };
-export { SessionCore };
+export { SessionCore, type SessionProps };
